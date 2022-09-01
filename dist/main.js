@@ -1,1 +1,1 @@
-console.log("Here I am");
+(()=>{const e=document.getElementById("content");console.log(e)})();
