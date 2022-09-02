@@ -3,7 +3,7 @@ import getContact from "./contact";
 import getOpening from "./opening";
 
 const body = document.getElementById('body');
-document.onload = () => body.appendChild(getMenu());
+document.onload = body.appendChild(getMenu());
 document.getElementById('menu').addEventListener('click', () => {
   body.innerHTML = '';
   body.appendChild(getMenu());

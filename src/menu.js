@@ -14,23 +14,23 @@ export default function getMenu() {
   const thead = document.createElement('thead');
   const tbody = document.createElement('tbody');
 
-  let i = 0;
-  let j = 0;
 
+  let i = 0;
   while (i < 5) {
-    const tr = document.createElement('tr');
+    let tr = document.createElement('tr');
+    let j = 0;
     while (j < 3) {
-      const td = document.createElement('td');
+      let td = document.createElement('td');
       td.textContent = rows[i][j];
       tr.appendChild(td);
-      ++j;
+      j++;
     }
     if (i === 0) {
       thead.appendChild(tr);
     } else {
       tbody.appendChild(tr);
     }
-    ++i;
+    i++;
   }
   const table = document.createElement('table');
   table.appendChild(thead);

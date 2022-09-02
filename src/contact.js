@@ -7,22 +7,26 @@ export default function getContact() {
   headline.textContent = 'You can contact us';
   body.appendChild(headline);
 
-  let i = 0;
-  let j = 0;
   const table = document.createElement('table');
 
+  let i = 0;
   while (i < 2) {
-    const tr = document.createElement('tr');
+    let tr = document.createElement('tr');
+    let j = 0;
     while (j < 2) {
-      const td = document.createElement('td');
-      const a = document.createElement('a');
-      if (i == 0) {
-        a.href = 'tel:+111111111111'
+      let td = document.createElement('td');
+      if (j == 1) {
+        let a = document.createElement('a');
+        if (i == 0) {
+          a.href = 'tel:+111111111111'
+        } else {
+          a.href = 'mailto:bettercallsaul@mail.org'
+        }
+        a.textContent = rows[i][j];
+        td.appendChild(a);
       } else {
-        a.href = 'mailto:bettercallsaul@mail.org'
+        td.textContent = rows[i][j];
       }
-      a.textContent = rows[i][j];
-      td.appendChild(a);
       tr.appendChild(td);
       ++j;
     }
