@@ -58,22 +58,22 @@ td {
   height: max-content;
   background-color: yellow;
   display: grid;
-  grid-template-columns: 390px 1fr 390px;
+  grid-template-columns: 500px 1fr 500px;
   grid-template-rows: max-content;
   grid-template-areas: 'left tabs right';
   justify-content: space-between;
   padding: 10px 100px;
 }
 
-#header>.left,
-#header>.right>a {
+#header>#left,
+#header>#right>a {
   display: grid;
   grid-template-rows: max-content;
   grid-template-columns: min-content max-content;
   align-items: center;
 }
 
-#header>.left {
+#header>#left {
   grid-area: left;
 }
 
@@ -88,7 +88,7 @@ ul {
   margin: 0;
 }
 
-#header>.right {
+#header>#right {
   grid-area: right;
   justify-self: end;
 }

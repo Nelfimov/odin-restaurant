@@ -6,14 +6,13 @@ export default function getMenu() {
     ['3', 'Pizza', '$50'],
     ['4', 'Pasta', '$30'],
     ['5', 'Pizza di pasta', '$80'],
-  ]
+  ];
   const headline = document.createElement('h1');
   headline.textContent = 'We have lots to offer';
   body.appendChild(headline);
 
   const thead = document.createElement('thead');
   const tbody = document.createElement('tbody');
-
 
   let i = 0;
   while (i < 5) {
